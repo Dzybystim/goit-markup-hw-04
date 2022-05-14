@@ -92,16 +92,20 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 500;
     color: var(--second-color-text);
     margin-right: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 
 }
 .hdcontact:last-child {
     margin-right: 0;
 }
 
-.hdcontact:hover,
+.hdcontact:hover ,
 .hdcontact:focus {
     color: var(--accent-color-text);
 }
+
 .navigator-list {
     display: flex;
     padding-left: 0;
@@ -118,7 +122,10 @@ h1,h2,h3,h4,h5,h6,p {
     align-items: center;
     display: flex;
 }
-
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
 
 
 /*Hero*******************/
