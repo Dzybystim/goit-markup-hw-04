@@ -30,7 +30,11 @@ h1,h2,h3,h4,h5,h6,p {
 .link {
     text-decoration: none;
 }
-
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
 .button {
     font-family: inherit;
     color: var(--three-color-text);
@@ -143,6 +147,12 @@ h1,h2,h3,h4,h5,h6,p {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/background-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    max-width: 1600px;
+    height: 600px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-block>.button {
@@ -312,12 +322,14 @@ padding-bottom: 94px;
    display: flex;
    justify-content: center;
    align-items: center;
-   fill: var(--second-color-text);
+   fill: var(--first-color-icon);
+   border-radius: 50%
 }
-.team-icon:hover {
+.team-icon:hover,
+.team-icon:focus {
   background-color: var(--accent-color-text);
-  border-radius: 50%;
-  fill: var(--three-color-text)
+  fill: var(--three-color-text);
+  cursor: pointer;
 }
 .social-list:not(:last-child) {
 margin-right: 10px;
@@ -345,9 +357,11 @@ margin-right: 10px;
     align-items: center;
     fill: var(--first-color-icon);
 }
-.client-icon:hover {
+.client-icon:hover,
+.client-icon:focus {
     border: 1px solid var(--accent-color-text);
     fill: var(--accent-color-text);
+    cursor: pointer;
 }
 .client-icon:not(:last-child) {
     margin-right: 30px;
@@ -357,6 +371,7 @@ margin-right: 10px;
     width: 106px;
     height: 60px;
 }
+
 
 /*Footer*****************/
 .footer {
@@ -425,8 +440,10 @@ margin-top: 20px;
     background-color: var(--three-bg);
     border-radius: 50%;
 }
-.footer-icon:hover {
+.footer-icon:hover,
+.footer-icon:focus {
     background-color: var(--accent-color-text);
+    cursor: pointer;
 }
 /*.footer-block {
     margin-left: auto;
