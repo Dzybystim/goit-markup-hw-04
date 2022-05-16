@@ -50,11 +50,6 @@ h1,h2,h3,h4,h5,h6,p {
     cursor: pointer;
     padding: 10px 32px;
 }
-.dot-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 .container {
     width: 1200px;
     margin-left: auto;
@@ -279,10 +274,10 @@ padding-bottom: 94px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.team .dot-list {
+.team .list {
     display: flex;
 }
-.filter>.dot-list {
+.filter>.list {
     display: flex;
 }
 .filter {
@@ -311,8 +306,6 @@ padding-bottom: 94px;
 }
 .social-icons {
     display: flex;
-    list-style: none;
-    padding: 0;
     justify-content: center;
     align-items: center;
 }
@@ -343,9 +336,6 @@ margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 .client-icon {
     width: 170px;
@@ -425,10 +415,7 @@ margin-top: 20px;
     margin-bottom: 20px;
 }
 .footer-list {
-    list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
 }
 .footer-icon {
     width: 44px;
